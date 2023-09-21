@@ -1,4 +1,4 @@
-# Dyary App Readme
+# Dyary App
 
 ## Overview
 

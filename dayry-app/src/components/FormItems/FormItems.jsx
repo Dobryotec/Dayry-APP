@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { addNewTodo } from "../../redux/todos/operations";
 
@@ -7,6 +7,7 @@ import css from "./FormItems.module.css";
 const FormItems = () => {
   const [textItem, setTextItem] = useState("");
   const dispatch = useDispatch();
+  const inputRef = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -20,6 +21,10 @@ const FormItems = () => {
     }
   };
 
+  useEffect(() => {
+    inputRef.current.focus();
+  }, []);
+
   const handleChange = ({ target: { value } }) => {
     setTextItem(value);
   };
@@ -29,6 +34,7 @@ const FormItems = () => {
       <h1 className={css.title}>Items</h1>
       <div className={css.wrapper}>
         <input
+          ref={inputRef}
           className={css.input}
           type="text"
           required
