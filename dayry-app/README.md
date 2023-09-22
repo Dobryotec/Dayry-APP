@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Diary App is a simple web application that allows users to manage tasks and add comments to them. It's built using React, Redux, AXIOS, MockAPI, Redux-persist, and Redux Toolkit for state management and data persistence. Styling is done using CSS Modules.
+The Dyary App is a simple web application that allows users to manage tasks and add comments to them. It's built using React, Redux, AXIOS, MockAPI, Redux-persist, and Redux Toolkit for state management and data persistence. Styling is done using CSS Modules.
 
 ## Features
 
